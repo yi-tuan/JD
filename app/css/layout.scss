@@ -1,0 +1,10 @@
+@mixin flex($derection:column,$inline:block) {
+    @if($inline==block){
+        display: flex;
+    }
+    @else{
+        display: inline-flex;
+    }    
+    flex-direction: $derection;
+    flex-wrap: wrap;
+}
